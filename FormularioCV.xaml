@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CVApp.Views.FormularioCV"
+             BackgroundColor="#F0F4F8">
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Label Text="FORMULARIO CV" 
+                   TextColor="#1A365D"
+                   FontSize="24"
+                   HorizontalOptions="Center"/>
+
+            <Label Text="Nombre" TextColor="#2D3748"/>
+            <Entry Text="{Binding Nombre}" 
+                   TextColor="#2D3748"
+                   BackgroundColor="White"
+                   PlaceholderColor="#718096"/>
+
+            <Label Text="Apellido" TextColor="#2D3748"/>
+            <Entry Text="{Binding Apellido}" 
+                   TextColor="#2D3748"
+                   BackgroundColor="White"
+                   PlaceholderColor="#718096"/>
+
+            <Label Text="Fecha de nacimiento" TextColor="#2D3748"/>
+            <DatePicker Date="{Binding FechaNacimiento}"
+                       TextColor="#2D3748"/>
+
+            <Label Text="Ocupación" TextColor="#2D3748"/>
+            <Entry Text="{Binding Ocupacion}" 
+                   TextColor="#2D3748"
+                   BackgroundColor="White"
+                   PlaceholderColor="#718096"/>
+
+            <Label Text="Teléfono" TextColor="#2D3748"/>
+            <Entry Text="{Binding Telefono}" 
+                   Keyboard="Telephone"
+                   TextColor="#2D3748"
+                   BackgroundColor="White"
+                   PlaceholderColor="#718096"/>
+
+            <Label Text="E-mail" TextColor="#2D3748"/>
+            <Entry Text="{Binding Email}" 
+                   Keyboard="Email"
+                   TextColor="#2D3748"
+                   BackgroundColor="White"
+                   PlaceholderColor="#718096"/>
+
+            <Label Text="Nacionalidad" TextColor="#2D3748"/>
+            <Entry Text="{Binding Nacionalidad}" 
+                   TextColor="#2D3748"
+                   BackgroundColor="White"
+                   PlaceholderColor="#718096"/>
+
+            <Label Text="Nivel de inglés" TextColor="#2D3748"/>
+            <StackLayout>
+                <RadioButton Content="Básico" 
+                            TextColor="#2D3748"
+                            GroupName="NivelIngles"
+                            CheckedChanged="OnNivelInglesChanged"/>
+                <RadioButton Content="Intermedio" 
+                            TextColor="#2D3748"
+                            GroupName="NivelIngles"
+                            IsChecked="True"
+                            CheckedChanged="OnNivelInglesChanged"/>
+                <RadioButton Content="Avanzado" 
+                            TextColor="#2D3748"
+                            GroupName="NivelIngles"
+                            CheckedChanged="OnNivelInglesChanged"/>
+            </StackLayout>
+
+            <Label Text="Lenguajes de programación" TextColor="#2D3748"/>
+            <StackLayout>
+                <CheckBox CheckedChanged="OnLenguajeChanged" x:Name="chkCpp"/>
+                <Label Text="C++" TextColor="#2D3748"/>
+                <CheckBox CheckedChanged="OnLenguajeChanged" x:Name="chkC"/>
+                <Label Text="C" TextColor="#2D3748"/>
+                <CheckBox CheckedChanged="OnLenguajeChanged" x:Name="chkJava"/>
+                <Label Text="Java" TextColor="#2D3748"/>
+                <CheckBox CheckedChanged="OnLenguajeChanged" x:Name="chkPython"/>
+                <Label Text="Python" TextColor="#2D3748"/>
+            </StackLayout>
+
+            <Label Text="Aptitudes" TextColor="#2D3748"/>
+            <Entry Text="{Binding Aptitudes}" 
+                   TextColor="#2D3748"
+                   BackgroundColor="White"
+                   PlaceholderColor="#718096"/>
+
+            <Label Text="Habilidades" TextColor="#2D3748"/>
+            <StackLayout>
+                <CheckBox CheckedChanged="OnHabilidadChanged" x:Name="chkComunicativo"/>
+                <Label Text="Comunicativo" TextColor="#2D3748"/>
+                <CheckBox CheckedChanged="OnHabilidadChanged" x:Name="chkPensamientoCritico"/>
+                <Label Text="Pensamiento crítico" TextColor="#2D3748"/>
+                <CheckBox CheckedChanged="OnHabilidadChanged" x:Name="chkSociable"/>
+                <Label Text="Sociable" TextColor="#2D3748"/>
+            </StackLayout>
+
+            <Label Text="Perfil" TextColor="#2D3748"/>
+            <Entry Text="{Binding Perfil}" 
+                   TextColor="#2D3748"
+                   BackgroundColor="White"
+                   PlaceholderColor="#718096"/>
+
+            <Button Text="ENVIAR"
+                    BackgroundColor="#2C5282"
+                    TextColor="White"
+                    Margin="0,20,0,0"
+                    Clicked="OnEnviarClicked"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

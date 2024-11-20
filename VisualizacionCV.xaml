@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CVApp.Views.VisualizacionCV"
+             BackgroundColor="#F0F4F8">
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Frame BackgroundColor="#2C5282" 
+                   Padding="20" 
+                   CornerRadius="10">
+                <StackLayout>
+                    <Label Text="{Binding NombreCompleto}"
+                           TextColor="White"
+                           FontSize="24"
+                           HorizontalOptions="Center"/>
+                    <Label Text="{Binding Ocupacion}"
+                           TextColor="#E2E8F0"
+                           FontSize="18"
+                           HorizontalOptions="Center"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame Margin="0,10,0,0" BackgroundColor="White" BorderColor="#CBD5E0" HasShadow="True">
+                <StackLayout>
+                    <Label Text="FECHA DE NACIMIENTO" FontAttributes="Bold" TextColor="#2D3748"/>
+                    <Label Text="{Binding FechaNacimiento}" TextColor="#4A5568"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame Margin="0,10,0,0" BackgroundColor="White" BorderColor="#CBD5E0" HasShadow="True">
+                <StackLayout>
+                    <Label Text="TELÉFONO" FontAttributes="Bold" TextColor="#2D3748"/>
+                    <Label Text="{Binding Telefono}" TextColor="#4A5568"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame Margin="0,10,0,0" BackgroundColor="White" BorderColor="#CBD5E0" HasShadow="True">
+                <StackLayout>
+                    <Label Text="E-MAIL" FontAttributes="Bold" TextColor="#2D3748"/>
+                    <Label Text="{Binding Email}" TextColor="#4A5568"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame Margin="0,10,0,0" BackgroundColor="White" BorderColor="#CBD5E0" HasShadow="True">
+                <StackLayout>
+                    <Label Text="NACIONALIDAD" FontAttributes="Bold" TextColor="#2D3748"/>
+                    <Label Text="{Binding Nacionalidad}" TextColor="#4A5568"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame Margin="0,10,0,0" BackgroundColor="White" BorderColor="#CBD5E0" HasShadow="True">
+                <StackLayout>
+                    <Label Text="NIVEL DE INGLÉS" FontAttributes="Bold" TextColor="#2D3748"/>
+                    <Label Text="{Binding NivelIngles}" TextColor="#4A5568"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame Margin="0,10,0,0" BackgroundColor="White" BorderColor="#CBD5E0" HasShadow="True">
+                <StackLayout>
+                    <Label Text="LENGUAJES DE PROGRAMACIÓN" FontAttributes="Bold" TextColor="#2D3748"/>
+                    <Label Text="{Binding LenguajesString}" TextColor="#4A5568"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame Margin="0,10,0,0" BackgroundColor="White" BorderColor="#CBD5E0" HasShadow="True">
+                <StackLayout>
+                    <Label Text="APTITUDES" FontAttributes="Bold" TextColor="#2D3748"/>
+                    <Label Text="{Binding Aptitudes}" TextColor="#4A5568"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame Margin="0,10,0,0" BackgroundColor="White" BorderColor="#CBD5E0" HasShadow="True">
+                <StackLayout>
+                    <Label Text="HABILIDADES" FontAttributes="Bold" TextColor="#2D3748"/>
+                    <Label Text="{Binding HabilidadesString}" TextColor="#4A5568"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame Margin="0,10,0,0" BackgroundColor="White" BorderColor="#CBD5E0" HasShadow="True">
+                <StackLayout>
+                    <Label Text="PERFIL" FontAttributes="Bold" TextColor="#2D3748"/>
+                    <Label Text="{Binding Perfil}" TextColor="#4A5568"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
